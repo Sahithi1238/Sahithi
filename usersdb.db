@@ -1,0 +1,19 @@
+Microsoft Windows [Version 10.0.19044.1766]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\sri>cd C:\SQLite\sqlite-tools-win32-x86-3390000\sqlite-tools-win32-x86-3390000
+
+C:\SQLite\sqlite-tools-win32-x86-3390000\sqlite-tools-win32-x86-3390000>prompt @$f
+
+@)sqlite3 usersdb.db
+SQLite version 3.39.0 2022-06-25 14:57:57
+Enter ".help" for usage hints.
+sqlite> create table movies(lead_actor varchar(50),actress varchar(50),director varchar(50),year_of_release int);
+sqlite> insert into users values('Ram Charan','Rakul Preet','Surender reddy',2016);
+Parse error: no such table: users
+sqlite> insert into movies values('Ram Charan','Rakul Preet','Surnder reddy',2016);
+sqlite> insert into movies values('Advi Sesh','Sobhitha','Sashi Kiran',2018);
+sqlite> select * from movies;
+Ram Charan|Rakul Preet|Surnder reddy|2016
+Advi Sesh|Sobhitha|Sashi Kiran|2018
+sqlite>
